@@ -13,14 +13,14 @@ export class AuthService {
   registerUser(user){
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    return this.http.post('http://localhost:3000/users/register', user,{headers: headers})
+    return this.http.post('/users/register', user,{headers: headers})
       .map(res => res.json());
   }
 
   authenticateUser(user){
     let headers = new Headers();
     headers.append('Content-Type','application/json');
-    return this.http.post('http://localhost:3000/users/authenticate', user,{headers: headers})
+    return this.http.post('/users/authenticate', user,{headers: headers})
       .map(res => res.json());
   }
 
@@ -29,7 +29,7 @@ export class AuthService {
     this.loadToken();
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type','application/json');
-    return this.http.get('http://localhost:3000/users/profile',{headers: headers})
+    return this.http.get('/users/profile',{headers: headers})
       .map(res => res.json());
   }
 
@@ -39,7 +39,7 @@ export class AuthService {
     headers.append('Authorization', this.authToken);
     headers.append('Content-Type','application/json');
     const user = JSON.parse(localStorage.getItem('user'));
-    return this.http.get(`http://localhost:3000/api/task?email=${user.email}`,{headers: headers})
+    return this.http.get(`/api/task?email=${user.email}`,{headers: headers})
       .map(res => res.json());
   }
 
@@ -50,12 +50,12 @@ export class AuthService {
         headers.append('Content-Type', 'application/json');
         const user = JSON.parse(localStorage.getItem('user'));
         newTask.email = user.email;
-        return this.http.post('http://localhost:3000/api/task', JSON.stringify(newTask), {headers: headers})
+        return this.http.post('/api/task', JSON.stringify(newTask), {headers: headers})
             .map(res => res.json());
     }
 
   deleteTask(id){
-        return this.http.delete(`http://localhost:3000/api/task?id=${id}`)
+        return this.http.delete(`/api/task?id=${id}`)
             .map(res => res.json());
     }
 
@@ -64,7 +64,7 @@ export class AuthService {
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.put(`http://localhost:3000/api/task?id=${task._id}`, JSON.stringify(task), {headers: headers})
+        return this.http.put(`/api/task?id=${task._id}`, JSON.stringify(task), {headers: headers})
             .map(res => res.json());
     }
 

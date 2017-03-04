@@ -668,13 +668,13 @@ var AuthService = (function () {
     AuthService.prototype.registerUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:3000/users/register', user, { headers: headers })
+        return this.http.post('/users/register', user, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.authenticateUser = function (user) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["Headers"]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:3000/users/authenticate', user, { headers: headers })
+        return this.http.post('/users/authenticate', user, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.getProfile = function () {
@@ -682,7 +682,7 @@ var AuthService = (function () {
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.get('http://localhost:3000/users/profile', { headers: headers })
+        return this.http.get('/users/profile', { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.getToDos = function () {
@@ -691,7 +691,7 @@ var AuthService = (function () {
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
         var user = JSON.parse(localStorage.getItem('user'));
-        return this.http.get("http://localhost:3000/api/task?email=" + user.email, { headers: headers })
+        return this.http.get("/api/task?email=" + user.email, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.addTask = function (newTask) {
@@ -701,11 +701,11 @@ var AuthService = (function () {
         headers.append('Content-Type', 'application/json');
         var user = JSON.parse(localStorage.getItem('user'));
         newTask.email = user.email;
-        return this.http.post('http://localhost:3000/api/task', JSON.stringify(newTask), { headers: headers })
+        return this.http.post('/api/task', JSON.stringify(newTask), { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.deleteTask = function (id) {
-        return this.http.delete("http://localhost:3000/api/task?id=" + id)
+        return this.http.delete("/api/task?id=" + id)
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.updateStatus = function (task) {
@@ -713,7 +713,7 @@ var AuthService = (function () {
         this.loadToken();
         headers.append('Authorization', this.authToken);
         headers.append('Content-Type', 'application/json');
-        return this.http.put("http://localhost:3000/api/task?id=" + task._id, JSON.stringify(task), { headers: headers })
+        return this.http.put("/api/task?id=" + task._id, JSON.stringify(task), { headers: headers })
             .map(function (res) { return res.json(); });
     };
     AuthService.prototype.storeUserData = function (token, user) {
