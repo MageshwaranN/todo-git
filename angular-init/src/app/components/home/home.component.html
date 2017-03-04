@@ -1,7 +1,7 @@
 <div class="jumbotron text-center">
   <h1>TO-Do Application</h1>
   <p class="lead">Register and login to TO-DO</p>
-  <div>
+  <div *ngIf="!authService.loggedIn()">
     <a class="btn btn-primary" [routerLink]="['/register']">Register</a> <a class="btn btn-default" [routerLink]="['/login']">Login</a>
   </div>
 </div>
