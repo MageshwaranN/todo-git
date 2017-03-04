@@ -23,7 +23,7 @@ const app = express();
 const users = require('./routes/users');
 const tasks = require('./routes/tasks');
 
-const port = process.env.PORT || 3000;
+app.set('port', (process.env.PORT || 3000));
 
 // Used for Authentication on disable some routs;
 app.use(cors());
@@ -55,6 +55,6 @@ app.get('*', (req, res) => {
 
 // Start Server
 
-app.listen(port, () => {
-    console.log(`Express Server Running on port : ${port}`);
+app.listen(app.get('port'), () => {
+    console.log(`Express Server Running on port : ${app.get('port')}`);
 });
