@@ -37,7 +37,7 @@ var ValidateService = (function () {
     ], ValidateService);
     return ValidateService;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/validate.service.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/validate.service.js.map
 
 /***/ }),
 
@@ -72,7 +72,7 @@ if (__WEBPACK_IMPORTED_MODULE_2__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_core__["enableProdMode"])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_3__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=H:/cXstudio/angular-init/src/main.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/main.js.map
 
 /***/ }),
 
@@ -106,7 +106,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/app.component.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/app.component.js.map
 
 /***/ }),
 
@@ -192,7 +192,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/app.module.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/app.module.js.map
 
 /***/ }),
 
@@ -227,7 +227,7 @@ var HomeComponent = (function () {
     ], HomeComponent);
     return HomeComponent;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/home.component.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/home.component.js.map
 
 /***/ }),
 
@@ -296,7 +296,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/login.component.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/login.component.js.map
 
 /***/ }),
 
@@ -351,7 +351,7 @@ var NavbarComponent = (function () {
     return NavbarComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/navbar.component.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/navbar.component.js.map
 
 /***/ }),
 
@@ -400,7 +400,7 @@ var ProfileComponent = (function () {
     return ProfileComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/profile.component.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/profile.component.js.map
 
 /***/ }),
 
@@ -479,7 +479,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/register.component.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/register.component.js.map
 
 /***/ }),
 
@@ -576,7 +576,7 @@ var TodoDashboardComponent = (function () {
     return TodoDashboardComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/todo-dashboard.component.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/todo-dashboard.component.js.map
 
 /***/ }),
 
@@ -621,7 +621,7 @@ var AuthGuard = (function () {
     return AuthGuard;
     var _a, _b;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/auth.guard.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/auth.guard.js.map
 
 /***/ }),
 
@@ -630,14 +630,10 @@ var AuthGuard = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `angular-cli.json`.
 var environment = {
-    production: false
+    production: true
 };
-//# sourceMappingURL=H:/cXstudio/angular-init/src/environment.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/environment.prod.js.map
 
 /***/ }),
 
@@ -745,7 +741,7 @@ var AuthService = (function () {
     return AuthService;
     var _a;
 }());
-//# sourceMappingURL=H:/cXstudio/angular-init/src/auth.service.js.map
+//# sourceMappingURL=H:/TODO-APP/angular-init/src/auth.service.js.map
 
 /***/ }),
 
