@@ -1,0 +1,22 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "Simple To-Do application using MEAN with angularjs2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "express":"*",
+    "mongoose":"*",
+    "bcryptjs":"*",
+    "cors":"*",
+    "jsonwebtoken":"*",
+    "body-parser":"*",
+    "passport":"*",
+    "passport-jwt":"*"
+  },
+  "author": "Mageshwaran Nathan",
+  "license": "ISC"
+}
