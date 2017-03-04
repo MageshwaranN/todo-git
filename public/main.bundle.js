@@ -804,7 +804,7 @@ module.exports = "<app-navbar></app-navbar>\n<div class=\"container\">\n  <flash
 /***/ 682:
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"jumbotron text-center\">\n  <h1>TO-Do Application</h1>\n  <p class=\"lead\">Register and login to TO-DO</p>\n  <div *ngIf=\"!authService.loggedIn()\">\n    <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a> <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h3>Forgot Somthing</h3>\n    <p>Dont worry!</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>we make your Day good</h3>\n    <p>Have a great day</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>We Remember for you</h3>\n    <p>Do this? Done this!</p>\n  </div>\n</div>"
+module.exports = "<div class=\"jumbotron text-center\">\n  <h1>TO-Do Application</h1>\n  <p class=\"lead\">Register and login to TO-DO</p>\n  <div>\n    <a class=\"btn btn-primary\" [routerLink]=\"['/register']\">Register</a> <a class=\"btn btn-default\" [routerLink]=\"['/login']\">Login</a>\n  </div>\n</div>\n\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h3>Forgot Somthing</h3>\n    <p>Dont worry!</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>we make your Day good</h3>\n    <p>Have a great day</p>\n  </div>\n  <div class=\"col-md-4\">\n    <h3>We Remember for you</h3>\n    <p>Do this? Done this!</p>\n  </div>\n</div>"
 
 /***/ }),
 
