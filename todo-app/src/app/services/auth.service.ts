@@ -32,9 +32,9 @@ export class AuthService {
 
   getProfile() {
     this.loadToken();
-    const headers = new HttpHeaders()
-      .set('Authorization', this.authToken)
-      .set('Content-Type', 'application/json');
+    let headers = new HttpHeaders();
+    headers = headers.append('Authorization', this.authToken);
+    headers = headers.append('Content-Type', 'application/json');
     return this.http
       .get(environment.api + '/users/profile', { headers: headers })
       .pipe(map(res => res));
