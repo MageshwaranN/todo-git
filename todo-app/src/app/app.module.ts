@@ -36,7 +36,8 @@ export function tokenGetter() {
     HttpClientModule,
     JwtModule.forRoot({
       config: {
-        tokenGetter: tokenGetter
+        tokenGetter: tokenGetter,
+        authScheme: 'JWT '
       }
     }),
     FlashMessagesModule.forRoot()
