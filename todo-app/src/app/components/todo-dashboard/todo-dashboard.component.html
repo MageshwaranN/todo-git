@@ -1,5 +1,5 @@
 <h1>
-  Welcome to your TO-DO List
+  Add your TO-DO here
 </h1>
 
 <form class="well" (submit)="addTask($event)">
@@ -9,7 +9,7 @@
 </form>
 
 <div *ngIf="isValid" class="row task-list">
-  <h3>You existing TO-DO's</h3>
+  <h3>TO-DO's</h3>
   <table class="table table-striped table-hover table-bordered">
     <thead>
       <tr>
