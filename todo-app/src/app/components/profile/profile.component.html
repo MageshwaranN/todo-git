@@ -1,0 +1,10 @@
+<div class="jumbotron" *ngIf="user">
+  <div class="card bg-light">
+    <div class="card-header"><h2>Profile Information</h2></div>
+    <div class="card-body">
+      <h4 class="card-title">{{user.name}}</h4>
+      <p class="card-text"><strong>Username: </strong> {{user.username}}</p>
+      <p class="card-text"><strong>Mail ID: </strong> {{user.email}}</p>
+    </div>
+  </div>
+</div>

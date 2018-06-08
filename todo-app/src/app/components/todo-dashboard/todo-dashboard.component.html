@@ -1,0 +1,29 @@
+<h1>
+  Welcome to your TO-DO List
+</h1>
+
+<form class="well" (submit)="addTask($event)">
+      <div class="form-group">
+        <input type="text" [(ngModel)]="task" name="task" class="form-control" placeholder="Add Task...">
+      </div>
+</form>
+
+<div *ngIf="isValid" class="row task-list">
+  <h3>You existing TO-DO's</h3>
+  <table class="table table-striped table-hover table-bordered">
+    <thead>
+      <tr>
+        <th>Status</th>
+        <th>Task Item</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td width="5%" class="text-center"><input type="checkbox" [checked]="task.isDone" (click)="updateStatus(task)"></td>
+        <td width="85%">{{task.task}}</td>
+        <td width="10%" class="text-center"><input type="button" (click)="deleteTask(task._id)" value="Delete" class="btn btn-danger btn-sm"> </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
